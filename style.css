@@ -16,6 +16,11 @@ img {
 
 }
 
+.logo1 {
+    display: none;
+    width: 40%;
+}
+
 .header {
     margin-top: 1%;
     margin-left: 3%;
@@ -29,7 +34,6 @@ img {
 
 }
 
-
 .header-right {
     color: #041330;
     font-family: 'Halant', serif;
@@ -41,8 +45,6 @@ img {
     gap: 80%;
 
 }
-
-
 
 .header-button {
     border-radius: 10px;
@@ -58,7 +60,6 @@ img {
     margin-right: 2%;
 
 }
-
 
 .intro {
     display: flex;
@@ -153,7 +154,6 @@ h2 {
     font-size: 50px;
     margin-bottom: 4%;
 
-
 }
 
 .projects {
@@ -187,8 +187,6 @@ h2 {
     padding: 2%;
 }
 
-
-
 .projects-img {
     width: 50%;
 }
@@ -207,16 +205,35 @@ h2 {
     margin-left: 3%;
     margin-bottom: 1%;
     width: 95%;
-    padding: 0.3%;
+    padding: 1%;
 
+}
+
+.footer-first {
+    display: flex;
+    gap: 25%;
+
+}
+
+.logo2 {
+    width: 35%;
+}
+
+.logo1-footer {
+    display: none;
 }
 
 .icons {
     display: flex;
-    justify-content: space-between;
-    width: 1.5%;
-    gap: 170%;
+    align-items: center;
+    width: 4%;
+    padding: 1%;
+    gap: 120%;
 
+}
+
+.Vector2 {
+    display: none;
 }
 
 .copyright {
@@ -225,7 +242,6 @@ h2 {
     font-weight: 600;
     text-align: right;
     width: 40%;
-    margin-right: 2%;
 
 }
 
@@ -237,4 +253,141 @@ ul {
 
 li {
     padding-left: 1%;
+}
+
+@media screen and (max-width: 415px) {
+    .header-right {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .logo1 {
+        display: block;
+        width: 50%;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .Vector2 {
+        display: block;
+        width: 5%;
+        margin-right: 5%;
+
+    }
+
+    .intro {
+        display: block;
+        justify-content: center;
+    }
+
+    .intro-text {
+        text-align: center;
+        font-size: 18px;
+        line-height: 150%;
+        width: 95%;
+        margin-top: 10%;
+
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-top: 8%;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 6%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .intro-button {
+        font-size: 16px;
+        font-weight: 600;
+        width: 98%;
+        padding: 4%;
+        margin-top: 8%;
+    }
+
+    .intro-img {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 8%;
+    }
+
+    .about-text {
+        text-align: justify;
+        font-size: 17px;
+        line-height: 150%;
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .header-about {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 3%;
+
+    }
+
+    .about-img {
+        width: 95%;
+        margin-right: 2%;
+        padding: 2%;
+
+    }
+
+    .projects {
+        display: none;
+    }
+
+    .footer {
+        display: inline-block;
+        padding: 3%;
+        width: 95%;
+        margin-top: 6%;
+
+    }
+
+    .footer-first {
+        width: 80%;
+        gap: 10%;
+        padding: 1%;
+
+    }
+
+    .logo1-footer {
+        display: block;
+        width: 65%;
+
+    }
+
+    .icons {
+        width: 10%;
+
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 15px;
+        width: 95%;
+        padding: 2%;
+    }
 }
