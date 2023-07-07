@@ -31,6 +31,8 @@ header {
     border: 2px solid #155EEF;
     border-radius: 10px;
     padding: 1%;
+    position: relative;
+    z-index: 1;
 }
 
 nav {
@@ -41,6 +43,30 @@ nav {
     font-family: 'Halant', serif;
     font-size: 27px;
     font-weight: 600;
+}
+
+.nav2,
+.close-menu {
+    display: none;
+}
+
+.nav2 {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    top: 0%;
+    /* left: 50%;
+    right: 50%; */
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #F9FBFF;
+    width: 100%;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .header-button {
@@ -92,7 +118,7 @@ h2 {
     width: 50%;
     display: flex;
     justify-content: right;
-   
+
 }
 
 .intro-button {
@@ -176,7 +202,7 @@ li {
 .projects-img {
     display: flex;
     width: 50%;
-    
+
 }
 
 footer {
@@ -222,6 +248,35 @@ footer {
 @media screen and (max-width: 415px) {
     nav {
         display: none;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav2.visible {
+        display: flex;
+        font-size: 23px;
+        font-weight: 600;
+        gap: 4%;
+        font-family: 'Halant', serif;
+    }
+
+    hr {
+        color: black;
+        width: 60%;
+    }
+
+    .close-menu {
+        display: block;
+        width: 30%;
+        margin-left: 55%;
+    }
+
+    .close-menu.inactive {
+        display: none;
+    }
+
+    .close-menu.hide {
+        display: none;
     }
 
     .header-button {
@@ -236,12 +291,18 @@ footer {
     .logo-mobile {
         display: block;
         width: 50%;
+        margin-left: 2%;
     }
 
     .hamburger {
         display: block;
-        width: 5%;
-        margin-right: 5%;
+        width: 30%;
+        margin-left: 35%;
+
+    }
+
+    .hamburger.hide {
+        display: none;
     }
 
     .intro {
@@ -273,6 +334,7 @@ footer {
         width: 98%;
         padding: 4%;
         margin-top: 8%;
+        margin-left: 3.5%;
     }
 
     .intro-img {
@@ -306,7 +368,7 @@ footer {
         padding: 2%;
     }
 
-    .projects{
+    .projects {
         padding: 1% 2%;
     }
 
@@ -314,7 +376,7 @@ footer {
         display: none;
     }
 
-    .projects-header{
+    .projects-header {
         font-size: 25px;
         text-align: center;
     }
@@ -326,7 +388,7 @@ footer {
         margin-bottom: 8%;
     }
 
-    ul{
+    ul {
         padding: 2%;
     }
 
@@ -343,7 +405,7 @@ footer {
 
     }
 
-    .icons{
+    .icons {
         width: 3%;
         margin-right: 15%;
         gap: 80%;
