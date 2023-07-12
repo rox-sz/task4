@@ -246,6 +246,12 @@ footer {
 
 
 @media screen and (max-width: 500px) {
+
+    header.visible{
+        position: fixed;
+        width: 94%;
+    }
+
     nav {
         display: none;
         flex-direction: column;
